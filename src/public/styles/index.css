@@ -6,6 +6,10 @@
     font-family: 'Jua', sans-serif;
 }
 
+body {
+    background-color: rgb(240, 238, 238);
+}
+
 /* navbar */
 
 .navbar {
@@ -63,7 +67,6 @@
 /* inicio */
 
 .inicioContenedor {
-    background-color: rgb(240, 238, 238);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -135,8 +138,6 @@
     outline: 0;
 }
 
-
-
 @keyframes wiggle {
     20% {
         box-shadow: inset -5px 0 5px 0 rgba(0, 0, 0, .4);
@@ -176,4 +177,60 @@
     100% {
         transform: translateX(0px) rotate(0deg);
     }
+}
+
+/* nosotros */
+
+.nosotrosContenedor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* buscar */
+
+.buscarContenedor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+/* resultado */
+
+.resultadoContenedor {
+    padding-top: 80px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resultadoContenedor h1 {
+    color: coral;
+}
+
+.pokemon {
+    width: 10%;
+    text-align: center;
+}
+
+.resultadoContenedor a:link, .resultadoContenedor a:visited {
+    text-decoration: none;
+    color: black;
 }

@@ -1,0 +1,24 @@
+<%- include ("./templates/header", {titulo: 'buscar' }) %>
+
+    <body>
+        <%- include ("./templates/navbar") %>
+            <div class="buscarContenedor">
+                <h1>¡¡aqui podras buscar los pokemones que quieras!!</h1>
+
+                <div class="formulario">
+                    <form action="/buscar" method="POST">
+                        <div class="mt-1">
+                            <label for="buscar" id="label">escribe el nombre o numero del pokemon: </label> <br>
+                            <input type="text" autofocus name="dato" id="buscar">
+                        </div>
+
+                        <input type="submit" class="mt-1" value="buscar">
+                    </form>
+
+                </div>
+            </div>
+
+            <script src="/js/index.js"></script>
+    </body>
+
+    </html>

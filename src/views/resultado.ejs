@@ -1,0 +1,23 @@
+<%- include ("./templates/header", {titulo: 'resultado' }) %>
+
+    <body>
+        <%- include ("./templates/navbar") %>
+            <div class="resultadoContenedor">
+                <h2>has buscado un <h1><%= query.species.name %></h1></h2>
+                <img src=<%= query.sprites.front_default %>  alt="imagen del pokemon">
+                <div class="pokemon">
+
+                    <% for( let index = 0; index < query.abilities.length; index++ ) { %>
+                        <h3 class="mt-3">habilidad <%= index %>: </h3><%= query.abilities[index].ability.name %> <br>
+                    <% } %>
+
+                    <h3 class="mt-3">experiencia base: </h3> <%= query.base_experience %> <br>
+                    <h3 class="mt-3">numero de movimientos: </h3> <%= query.moves.length %> <br>
+                    <h3 class="mt-3">apariciones en juegos: </h3> <%= query.game_indices.length %> <br>
+                    
+                </div>
+            </div>
+
+    </body>
+
+    </html>
